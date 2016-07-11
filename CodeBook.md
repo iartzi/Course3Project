@@ -24,12 +24,14 @@ Run the script `run_analysis.R`, which collects and cleans a data set:
 
 ### Variables
 
-xTest:                 table read from `test/X_test.txt`
-xTrain:                table read from `train/X_train.txt`
-yTest:                 table read from `test/Y_test.txt`
-yTrain:                table read from `train/Y_train.txt`
-subjectTest:           table read from `test/subject_test.txt`
-subjectTrain:          table read from `test/subject_train.txt`
-one_data_set:          combined data set of the above variables
-data_set_X_mean_std:   measurements on the mean and standard deviation for each measurement
+|       Variable       | Description |
+| -------------------- | ----------- |
+| xTest                | table read from `test/X_test.txt` |
+| xTrain               | table read from `train/X_train.txt` |
+| yTest                | table read from `test/Y_test.txt` |
+| yTrain               | table read from `train/Y_train.txt` |
+| subjectTest          | table read from `test/subject_test.txt` |
+| subjectTrain         | table read from `test/subject_train.txt` |
+| one_data_set         | combined data set of the above variables |
+| data_set_X_mean_std  | measurements on the mean and standard deviation for each measurement |
 descriptive_names_set: the data set with descriptive activity names
