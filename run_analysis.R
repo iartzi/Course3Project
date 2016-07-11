@@ -33,7 +33,7 @@ names(data_set_Y) <- "Activity"
 names(one_data_set) <- "Subject"
 descriptive_names_set <- cbind(data_set_X_mean_std, data_set_Y, one_data_set)
 
-#Relabel each 
+#Relabel each using gsub and regular expressions
 names(descriptive_names_set) <- make.names(names(descriptive_names_set))
 names(descriptive_names_set) <- gsub('Acc',"Acceleration",names(descriptive_names_set))
 names(descriptive_names_set) <- gsub('GyroJerk',"Angular_Acceleration",names(descriptive_names_set))
@@ -53,3 +53,4 @@ names(descriptive_names_set) <- gsub('Freq$',"Frequency",names(descriptive_names
 Data2<-aggregate(. ~Subject + Activity, descriptive_names_set, mean)
 Data2<-Data2[order(Data2$Subject,Data2$Activity),]
 write.table(Data2, file = "./tidy.txt",row.name=FALSE)
+
