@@ -34,4 +34,4 @@ Run the script `run_analysis.R`, which collects and cleans a data set:
 | subjectTrain         | table read from `test/subject_train.txt` |
 | one_data_set         | combined data set of the above variables |
 | data_set_X_mean_std  | measurements on the mean and standard deviation for each measurement |
-descriptive_names_set: the data set with descriptive activity names
+| descriptive_names_set| the data set with descriptive activity names|
